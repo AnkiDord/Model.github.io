@@ -1,0 +1,29 @@
+1 论文提出/采用什么方法，细节是什么
+2 论文要解决什么问题/任务，其启发点或借鉴之处在哪
+3 论文方法达到了什么效果
+
+摘要：我们提出一个计算效率极高的卷积神经网络框架名字叫做ShuffleNet，它是专门为那些计算能力低的移动设备设计的。新的框架利用了两个新的操作，逐点群卷积(pointwise group convolution)
+和通道混洗(channel shuffle)，在保持精确度的同时极大的较少了计算消耗。实验在ImageNet分类和MSCOCO对象检测证明了ShuffleNet优于其它卷积神经网络，例如，在ImageNet分类任务中比最近的
+MobileNet具有更低的top-1错误率，在40MFLOPs计算预算下。 在一块ARM的移动设备上，ShuffleNet在保持精确度的同时，运行速度是AlexNet的13倍。
+
+论文架构
+
+1 Introduction
+2 Related Work
+  2.1 Efficient Model Designs
+  2.2 Group Convolution
+  2.3 Channel Shuffle Operation
+  2.4 Model Acceleration
+3 Approach
+  3.1 Channnel Shuffle for Group Convolutions
+  3.2 ShuffleNet Unit
+  3.3 Network Architecture
+4 Experiments
+  4.1 Ablation Study
+    4.1.1 Pointwise Group Convolutions
+    4.1.2 Channel Shuffle vs. No Shuffle
+  4.2 Comparsion with Other Structure Units
+  4.3 Comparsion with MobileNets and Other Frameworks
+  4.4 Generalization Ability
+  4.5 Actual Speedup Evaluation
+  
